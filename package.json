@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/app.js",
     "test": "node -r source-map-support/register -r dotenv/config dist/__tests__/main.js dotenv_config_path=.env.test.local",
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
