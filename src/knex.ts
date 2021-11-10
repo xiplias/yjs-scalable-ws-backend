@@ -7,7 +7,8 @@ const knex = Knex({
     host: config.db.host,
     user: config.db.user,
     password: config.db.password,
-    database: config.db.name
+    database: config.db.name,
+    port: config.db.port
   }
 });
 

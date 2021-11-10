@@ -7,15 +7,18 @@ const config = {
   },
 
   db: {
-    host: process.env.DB_HOST as string,
-    user: process.env.DB_USER as string,
-    name: process.env.DB_NAME as string,
-    password: process.env.DB_PASSWORD as string
+    host: process.env.PGHOST as string,
+    user: process.env.PGUSER as string,
+    name: process.env.PGDATABASE as string,
+    password: process.env.PGPASSWORD as string,
+    port: Number(process.env.PGPORT as string)
   },
 
   redis: {
-    host: process.env.REDIS_HOST as string,
-    port: Number(process.env.REDIS_PORT as string),
+    host: process.env.REDISHOST as string,
+    user: process.env.REDISUSER as string,
+    password: process.env.REDISPASSWORD as string,
+    port: Number(process.env.REDISPORT as string),
     keyPrefix: process.env.REDIS_PREFIX as string
   }
 }
